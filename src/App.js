@@ -1,16 +1,32 @@
+import styled from 'styled-components';
 import './App.css';
+import Nav from './components/Nav';
 
 function App() {
-  return <div>APP</div>;
+  return (
+    <Container>
+      <Nav />
+    </Container>
+  );
 }
 
 export default App;
 
-// URL
-// https://api.themoviedb.org/3/movie/latest?api_key
-// https://api.themoviedb.org/3/movie/{movie_id}?api_key
-// https://api.themoviedb.org/3/movie/latest?api_key
-// https://api.themoviedb.org/3/movie/latest?api_key
+const Container = styled.main`
+  position: relative;
+  min-height: calc(100vh - 250px);
+  overflow-x: hidden;
+  display: block;
+  top: 72px;
+  padding: 0 calc(3.5vw + 5px);
 
-// https://image.tmdb.org/t/p/original
-// https://image.tmdb.org/t/p/w500
+  &:after {
+    background: url('/images/home-background.png') center center / cover
+      no-repeat fixed;
+    content: '';
+    position: absolute;
+    inset: 0px;
+    opacity: 1;
+    z-index: -1;
+  }
+`;
