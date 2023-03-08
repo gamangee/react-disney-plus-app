@@ -1,25 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <div>APP</div>;
 }
 
 export default App;
+
+// URL
+// https://api.themoviedb.org/3/movie/latest?api_key
+// https://api.themoviedb.org/3/movie/{movie_id}?api_key
+// https://api.themoviedb.org/3/movie/latest?api_key
+// https://api.themoviedb.org/3/movie/latest?api_key
+
+// https://image.tmdb.org/t/p/original
+// https://image.tmdb.org/t/p/w500
